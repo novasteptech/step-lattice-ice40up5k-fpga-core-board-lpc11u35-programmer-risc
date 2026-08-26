@@ -62,8 +62,6 @@ Once the first hardware example works, test UART communication before moving on 
 
 ## Board Overview
 
-![Board layout](images/layout.png)
-
 The iCE40 FPGA PICO combines programmable logic, FPGA configuration, serial communication, a few useful experimental peripherals, and Pico-style expansion in one small board. The FPGA remains the center of the design; the LPC11U35 is there to make development and communication easier rather than serving as the application processor. This separation is useful when teaching FPGA architecture because user designs still run in the FPGA fabric rather than being delegated to a hidden host MCU.
 
 ### Main FPGA
@@ -134,9 +132,6 @@ USB Type-C is the safest documented starting point for powering the board during
 
 ## Board Dimensions
 
-![Dimensions](images/dimensions.png)
-
-
 The final mechanical drawing should show the PCB outline, USB Type-C overhang, component keep-out areas, header center lines, and any mounting-hole locations. If headers are supplied or pre-soldered, the assembled height should be listed separately from bare-PCB thickness. Connector clearance should also be documented for users placing the module inside an enclosure or above a carrier PCB.
 
 | Mechanical item          | Current value                                                                                                 |
@@ -145,8 +140,6 @@ The final mechanical drawing should show the PCB outline, USB Type-C overhang, c
 Do not scale dimensions from product photographs. Perspective correction, image resizing, and connector protrusion can all produce incorrect mechanical values. Use the PCB CAD or controlled STEP/drawing file as the authoritative source.
 
 ## Pinout
-
-![Pinout diagram](images/pinout.png)
 
 The pinout is the main reference for any external hardware connected to the iCE40 FPGA PICO. Current product material identifies **25 digital I/O pins** and a Raspberry Pi Pico-compatible pin arrangement. A complete pin map must identify both the physical connector position and the corresponding iCE40UP5K package pin so that RTL constraints remain traceable to the actual hardware.
 
@@ -306,8 +299,6 @@ For Windows, document whether the programming interface is recognized automatica
 For the open-source flow, record the exact synthesis, place-and-route, packing, and programming versions used by CI or release builds. FPGA toolchains evolve, and reproducibility is much better when a known working environment is documented instead of simply saying "install the latest version."
 
 ## Package Contents
-
-![Package contents](images/package.jpg)
 
 The current retail package list was not included in the supplied metadata. Only the core board itself can be treated as confirmed from the available product material. Accessories should not be inferred from photographs or from older training-platform bundles because those may contain expansion boards and modules that are separate products.
 
