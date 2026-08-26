@@ -1,4 +1,3 @@
-![Lattice ICE40UP5K FPGA core board, LPC11U35 programmer, RISC-V porting.](images/hero.jpg)
 
 The iCE40 FPGA PICO is a compact Lattice iCE40UP5K FPGA core board with an onboard LPC11U35 programming/UART interface, Raspberry Pi Pico-compatible pin arrangement, and hardware intended for HDL, FPGA, and RISC-V soft-core experiments.
 
